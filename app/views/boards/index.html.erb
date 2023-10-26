@@ -11,17 +11,17 @@
   </div>
 
 
-  <div class="list-group list-group-flush">
-      <% @list_of_boards.each do |a_board| %>
-        <a href="/boards/<%= a_board.id %>" class="d-flex list-group-item list-group-item-action">
-          <%= a_board.name %>
-        
-        <div class="ms-auto">
-          <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </a>
-    <% end %>
-  </div>               
+      <div class="list-group list-group-flush">
+          <% @list_of_boards.each do |a_board| %>
+            <a href="/boards/<%= a_board.id %>" class="d-flex list-group-item list-group-item-action">
+              <%= a_board.name %>
+            
+            <div class="ms-auto">
+              <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </a>
+        <% end %>
+      </div>               
     
    </div>
   </div>
